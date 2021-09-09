@@ -1,0 +1,20 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: job-jmeter
+spec:
+  selector: {}
+  template:
+    metadata:
+      name: job-jmeter
+    spec:
+      containers:
+        - name: job-jmeter
+          image: viewnext/jmeter-job:1.0.2
+          command:
+            - /bin/bash
+            - -c
+            - entrypoint.sh -f https://raw.githubusercontent.com/talisman49/task-Jmeter/main/test/JMeter_Docker_Script.jmx -t 10 -r 1
+      restartPolicy: Never
+      securityContext:
+        runAsUser: 0
