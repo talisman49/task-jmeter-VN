@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: job-jmeter
+spec:
+  containers:
+  - name: job-jmeter
+    image: dockeresteban/jmeter-viewnext:1.0.0
+    command:
+    - /bin/bash
+    - -c
+    - entrypoint.sh -f https://raw.githubusercontent.com/talisman49/task-jmeter-VN/main/JMeter_Docker_Script_OC.jmx -t 10 -r 1
