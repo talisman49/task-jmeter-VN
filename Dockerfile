@@ -1,7 +1,10 @@
-FROM openjdk:8-jdk-slim
+FROM openjdk:11
 
 ARG JMETER_VERSION=5.4.1
-		
+
+COPY . /usr/src/myapp
+WORKDIR /usr/src/myapp
+
 RUN apt-get clean && \
 apt-get update && \
 apt-get -qy install \
