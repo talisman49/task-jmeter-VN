@@ -186,7 +186,7 @@
               </elementProp>
               <elementProp name="influxdbUrl" elementType="Argument">
                 <stringProp name="Argument.name">influxdbUrl</stringProp>
-                <stringProp name="Argument.value">http://influxdb-ltt-esteban-garzon.escuela-fra02-b3c-4x16-4282826dce7d155229a320302e775459-0000.eu-de.containers.appdomain.cloud/orgs/1eb590bb736d53e9/write?org=Viewnext&amp;bucket=jmeter</stringProp>
+                <stringProp name="Argument.value">http://influxdb-ltt-esteban-garzon.escuela-fra02-b3c-4x16-4282826dce7d155229a320302e775459-0000.eu-de.containers.appdomain.cloud/orgs/1eb590bb736d53e9/api/v2/write?org=Viewnext&amp;bucket=prueba</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
               <elementProp name="application" elementType="Argument">
@@ -238,4 +238,3 @@
     </hashTree>
   </hashTree>
 </jmeterTestPlan>
-
