@@ -16,7 +16,7 @@
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <intProp name="LoopController.loops">-1</intProp>
+          <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">10</stringProp>
         <stringProp name="ThreadGroup.ramp_time">30</stringProp>
@@ -163,9 +163,9 @@
           </elementProp>
           <stringProp name="HTTPSampler.domain">as.com</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
-          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/</stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -186,7 +186,7 @@
               </elementProp>
               <elementProp name="influxdbUrl" elementType="Argument">
                 <stringProp name="Argument.name">influxdbUrl</stringProp>
-                <stringProp name="Argument.value">http://influxdb-020008-esteban-garzon.escuela-fra02-b3c-4x16-4282826dce7d155229a320302e775459-0000.eu-de.containers.appdomain.cloud/orgs/72cc7fd5fb98bc1d/api/v2/write?org=Viewnext&amp;bucket=jmeter</stringProp>
+                <stringProp name="Argument.value">http://influxdb-latest-2-esteban-garzon.escuela-fra02-b3c-4x16-4282826dce7d155229a320302e775459-0000.eu-de.containers.appdomain.cloud/orgs/e5fa8c4067b3e2a4/api/v2/write?org=Viewnext&amp;bucket=jmeter</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
               <elementProp name="application" elementType="Argument">
@@ -226,7 +226,7 @@
               </elementProp>
               <elementProp name="influxdbToken" elementType="Argument">
                 <stringProp name="Argument.name">influxdbToken</stringProp>
-                <stringProp name="Argument.value">fO80ZiSTgGP-Vvy-eXP9wek0bhWC-e8cw_Wm_0VAZO5T1OGJjk630qh8QRHlzqv7Q4hZXeLk0AMeRAFS5Kq4Dw==</stringProp>
+                <stringProp name="Argument.value">sq2hl6bNLLLtDIfQzhYHiAgsUQ_Im2IAMXdM27SqHAKVFaE1Oi6HlHS4_m5o8GnCtnRAk0vTbMpBQNt7RoeMUw==</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
