@@ -186,7 +186,7 @@
               </elementProp>
               <elementProp name="influxdbUrl" elementType="Argument">
                 <stringProp name="Argument.name">influxdbUrl</stringProp>
-                <stringProp name="Argument.value">http://localhost:8086/api/v2/write?org=Viewnext&amp;bucket=jmeter</stringProp>
+                <stringProp name="Argument.value">http://http:/172.17.0.2:8086/api/v2/write?org=Viewnext&amp;bucket=jmeter</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
               <elementProp name="application" elementType="Argument">
@@ -226,7 +226,7 @@
               </elementProp>
               <elementProp name="influxdbToken" elementType="Argument">
                 <stringProp name="Argument.name">influxdbToken</stringProp>
-                <stringProp name="Argument.value">&quot;${DOCKER_INFLUXDB_INIT_ADMIN_TOKEN}&quot; </stringProp>
+                <stringProp name="Argument.value">359mMX-weaPmIG4xCZzb7vHNoa9aISMh7IfVRMSG21elwywZ5H-bsI5d6mHc8vbk04Qqe-I6ek7bn9mLz4UlGA==</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
