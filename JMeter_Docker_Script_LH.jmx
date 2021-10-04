@@ -226,7 +226,7 @@
               </elementProp>
               <elementProp name="influxdbToken" elementType="Argument">
                 <stringProp name="Argument.name">influxdbToken</stringProp>
-                <stringProp name="Argument.value">$(DOCKER_INFLUXDB_INIT_ADMIN_TOKEN)</stringProp>
+                <stringProp name="Argument.value">hAqGjJoMgzg28z16nw-WtMVUzhn6Q03p_0xbzqP1F7dsQ7cUI26U9FG0J9vN9TCtEpUUm7nH8f6uLSGLLQLK3w==</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
