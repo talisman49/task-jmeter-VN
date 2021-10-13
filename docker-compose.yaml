@@ -1,0 +1,26 @@
+version: "3.0"
+services:
+  service-influxdb:
+    image: influxdb:latest
+    ports:
+      - "8086:8086"
+    volumes:
+      - $PWD/data:/var/lib/influxdb2
+      - $PWD/config:/etc/influxdb2
+      - $PWD/scripts:/docker-entrypoint-initdb.d
+    environment:
+      DOCKER_INFLUXDB_INIT_USERNAME: esteban
+      DOCKER_INFLUXDB_INIT_PASSWORD: influxdb
+      DOCKER_INFLUXDB_INIT_ORG: Viewnext
+      DOCKER_INFLUXDB_INIT_BUCKET: jmeter
+      V1_DB_NAME: v1-db
+      V1_RP_NAME: v1-rp
+      V1_AUTH_USERNAME: v1-user
+      V1_AUTH_PASSWORD: v1-password
+  service-grafana:
+    image:  rancher/grafana-grafana:7.2.1
+    ports:
+      - "3000:3000"
+  service-jmeter:
+    image: dockeresteban/jmeter-viewnext:1.0.0
+    command: '-f https://raw.githubusercontent.com/talisman49/task-jmeter-VN/main/JMeter_Docker_Script_LH.jmx'root@PC1D4SJL:~/task-jmeter-VN#
