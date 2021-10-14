@@ -186,7 +186,7 @@
               </elementProp>
               <elementProp name="influxdbUrl" elementType="Argument">
                 <stringProp name="Argument.name">influxdbUrl</stringProp>
-                <stringProp name="Argument.value">http://http://influxdb-latest-2-esteban-garzon.escuela-fra02-b3c-4x16-4282826dce7d155229a320302e775459-0000.eu-de.containers.appdomain.cloud/write?org=Viewnext&amp;bucket=jmeter</stringProp>
+                <stringProp name="Argument.value">http://http://influxdb-latest-2-esteban-garzon.escuela-fra02-b3c-4x16-4282826dce7d155229a320302e775459-0000.eu-de.containers.appdomain.cloud/metrics/api/v2/write?org=Viewnext&amp;bucket=jmeter</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
               <elementProp name="application" elementType="Argument">
